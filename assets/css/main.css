@@ -4707,15 +4707,14 @@ input, select, textarea {
 		text-align: left;
 	}
 
-	#tv {
+	.tv {
 		position: relative;
 		border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
-		color: white;
 		box-shadow: 20px 20px rgba(0,0,0,.15);
 		transition: all .4s ease;
 	  }
-	  #tv:hover {
-		border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+	  .tv:hover {
+		border-radius: 0% 0% 5% 5% / 0% 0% 5% 5% ;
 		box-shadow: 10px 10px rgba(0,0,0,.25);
 	  }
 	  
@@ -4749,8 +4748,8 @@ input, select, textarea {
 	  .timeline::after {
 		content: '';
 		position: absolute;
-		width: 2px;
-		background: #1e252d;
+		width: 5px;
+		background: #B1B1B1;
 		top: 0;
 		bottom: 0;
 		left: 21%;
@@ -4780,7 +4779,7 @@ input, select, textarea {
 		top: calc(50% - 8px);
 		right: -8px;
 		background: #ffffff;
-		border: 2px solid #1e252d;
+		border: 4px solid #B1B1B1;
 		border-radius: 16px;
 		z-index: 1;
 	  }
@@ -4793,10 +4792,10 @@ input, select, textarea {
 		content: '';
 		position: absolute;
 		width: 50px;
-		height: 2px;
+		height: 5px;
 		top: calc(50% - 1px);
 		right: 8px;
-		background: #1e252d;
+		background: #B1B1B1;
 		z-index: 1;
 	  }
 	  
@@ -4832,7 +4831,7 @@ input, select, textarea {
 		height: 40px;
 		padding: 9px 0;
 		top: calc(50% - 20px);
-		border: 2px solid #1e252d;
+		border: 4px solid #B1B1B1;
 		border-radius: 40px;
 		text-align: center;
 		font-size: 18px;
@@ -4850,7 +4849,7 @@ input, select, textarea {
 	  
 	  .timeline-container .content {
 		padding: 30px 90px 30px 30px;
-		background: rgb(233, 242, 248);
+		background: #F9F9FB;
 		position: relative;
 	  }
 	  
@@ -4925,7 +4924,43 @@ input, select, textarea {
 		background-image: url("../../images/vneuron.png");
 	  }
 
+	  .icon-img-iobird {
+		background-image: url("../../images/iobird.png");
+	  }
+
+	  .icon-img-ites {
+		background-image: url("../../images/ites.png");
+	  }
+
 	  .icon-img {
 		background-size: cover;
 		background-position: center;
 	  }
+
+	   /* Style the button that is used to open and close the collapsible content */
+		.collapsible {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+		
+		/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+		.active, .collapsible:hover {
+			background-color: #ccc;
+		}
+		
+		/* Style the collapsible content. Note: hidden by default */
+		.collapsing {
+			padding: 0 18px;
+			display: none;
+			overflow: hidden;
+			max-height: 0;
+			display: block;
+			transition: max-height 0.2s ease-out;
+		} 
