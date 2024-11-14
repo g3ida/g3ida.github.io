@@ -70,13 +70,44 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Senior Software Engineer - Munich Germany</h3>
+                            <div class="subheading mb-3">Paradox Cat GmBH</div>        
+                            <p>Paradox Cat is a specialist in human-machine interfaces (HMI) software development and official software partner for BMW and other automotive companies.<br>I have mainly been working on the BMW Android based infotainment system and touching multiple layer of the Android Open Source Platform (AOSP).</p></div>
+                            <div class="flex-shrink-0"><span class="text-primary">November 2022 - Present</span></div>
+                            
+                            <p><h4>Working on BMW next-gen Infotainment System</h4> <ul>
+                                <li>Worked on next-gen HMI software for BMW’s infotainment system.</li>
+                                <li>Worked on the low level Hardware interface (HAL) and communication to the car functions through SOME/IP.</li>
+                                <li>Worked on android services/managers and extending the development SDK add-ons.</li>
+                                <li>Worked on customization using overlays.</li>
+                                <li>Worked on Backend communication and syncing of user settings.</li>
+                                <li>Contributed to the design and architecture of new features and functionalities.</li>
+                                <li>Fixing Production issues and providing patches and software updates.</li>
+                            </ul> 
+                            <br>
+                             <b>Tools: </b>C++, Kotlin, Java, SOME/IP, AOSP, Joynr, HAL, Android, Gerrit Zuul, HIDL, AIDL, Jira, guithub, gerrit, Confluence ....</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2020 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Research and Developement Engineer (computer vision)</h3>
+                            <div class="subheading mb-3">Vneuron</div>
+                            <p>Image processing for OCR and extraction of information on structured documents. Types of processed documents: Identity cards, driving licenses, Car registration documents, residence card and many other banks and insurance companies specific files... <ul> <li>Image Segmentation(either with UNET or a specific algorithm based on edge detection) followed by Image Classification(CNN) using pytorch(training) and libtorch(for C++ inference).</li> <li>Locating keypoints in Structured documents using Image registration(SIFT, BRISK, AKAZE, ORB descriptors) and outliers elimination using RANSAC and Vector Field Concensus (VFC).</li> <li>Geometric transformation of the image to render it in a 2D plane.</li> <li>Image filtering for denoising and background removal (with OpenCV, Leptonica etc.) and the extraction of relevant fields (Tesseract for text fields and Zbar for bar codes).</li> <li> Specification of fields to extract for each type of document in a JSON configuration file. </li> <li>Reconstruction of damaged bar codes. </li> <li>Refinement of Tesseract's LSTM for some specific textual fields. </li> <li>Fix some OCR result with dictionaries.</li> <li> Measurement of the level of confidence by carrying out several attempts to read fields with different parameters. </li> <li> Design of a plugin system in Lua to easily integrate custom custommer logic. </li> <li> Design of a REST API which consumes an image as input and returns a jSON containing the types of the detected documents and the corresponding extracted fields with their confidence level </li> <li> Optimized API response time using multithreading and AVX vectorization </li> <li> API consumption by a Python client </li> <li> Organizing unsorted documents of each folder using a matching algorithm (based on union-find) </li> <li> Creation of benchmark tests (criterion: speed and precision) </li> <li>Design plugin system for client specific code and specific OCR field validation using Lua scripting.</li> </ul> <b>Tools :</b> C++17, Python 3, Lua4, Teserract OCR, OpenCV4, Pytorch, libtorch, Zbar, cppRestSDK, Leptonica, GitLab, Git........</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2019 - June 2020</span></div>
+                    </div>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Full Stack Developer</h3>
                             <div class="subheading mb-3">Expensya</div>
                             <p><h4>Member of the payment team</h4> <ul> <li>Working on a new innovative project to allow white-labeled banking features like accounts and cards into Expensya workflow, done in collaboration with Swan (a French startup that offers Banking as a service solutions).</li> <li>Consuming Swan graphQL API by our backend and provide REST APIs for the frontend to consume.</li> <li>Using OAuth2 for authentication.</li> <li>Implementing budget workflow process between employees and hierarchical managers, request, validation, rejection etc...</li> <li>Working with webhooks in order to maintain the database updated.</li> <li>Implementing the corresponding Web app views and modals that consume the created APIs</li> </ul> <h4>Member of the core team</h4> <ul> <li>Adapting signup/Data collection and marketing e-mails to the German law for German companies.</li> <li>workflow by rules. (broken rules determine the next validator to bring).</li> <li>Batch send validation emails after importing users with specific expiration date.</li> </ul> <h4>Ensure product quality</h4> <ul> <li>Fix production bugs feedback by clients.</li> <li>Fix exceptions captured on Azure Portal.</li> <li>Help support team by investigating client feedback and trying to understand/reproduce reported bugs.</li> <li>Create Service and Web E2E for some scenarios.</li> </ul> <b>Tools</b> : C# .Net, Angular,AngularJS Microsoft Azure, Microsoft Appinsights, Git, graphQL, Jasmine, karma, protractor, Scrum....</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2020 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2020 - July 2022</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
